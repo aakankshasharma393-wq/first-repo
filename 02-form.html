@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exercise 02 - Form</title>
+  </head>
+  <body>
+    <main>
+      <form method="post" action="/calculate">
+        <h1>Roth IRA Calculator</h1>
+        <div>
+          <label for="Balance">Balance($)</label>
+          <br />
+          <input type="number" id="number" name="amount" />
+        </div>
+        <br />
+        <div>
+          <label for="Annual Contribution">Annual Contribution (4)</label>
+          <br />
+          <input type="number" id="number" name="contribution" />
+        </div>
+        <br />
+        <fieldset>
+          <legend>Maximum Contributions?</legend>
+          <input type="radio" id="Yes" name="YesorNo" value="Yes" />
+          <label for="Yes">Yes</label>
+          <input type="radio" id="No" name="YesorNo" value="No" />
+          <label for="No">No</label>
+        </fieldset>
+        <div>
+          <label for="Expected rate of return"
+            >Expected rate of return (5)</label
+          >
+          <br />
+          <input type="number" id="number" name="rateofreturn" />
+        </div>
+        <br />
+        <div>
+          <label for="Current age">Current age</label>
+          <br />
+          <input type="number" id="number" name="currentage" />
+        </div>
+        <br />
+        <div>
+          <label for="Retirement age">Retirement age</label>
+          <br />
+          <input type="number" id="number" name="Retirementage" />
+        </div>
+        <br />
+        <div>
+          <label for="Marginal tax rate (%)">Marginal tax rate (%)</label>
+          <br />
+          <input type="number" id="number" name="Marginalrate" />
+        </div>
+        <br />
+        <div>
+          <input type="submit" value="Calculate" />
+          <input type="reset" value="Reset" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
