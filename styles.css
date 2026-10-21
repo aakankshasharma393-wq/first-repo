@@ -1,0 +1,186 @@
+:root {
+  --ice-blue-juvie: #8fbcd4;
+  --gothic-gray-blue: #6f8796;
+  --dark-slate-infinity: #1f2a33;
+  --white: #fcfcfc;
+  --black: #040404;
+
+  --gray1: #333333;
+  --gray2: #555555;
+  --gray3: #cccccc;
+  --gray4: #aaaaaa;
+
+  --teal: #006060;
+  --lightteal: #008080;
+  --purple: #800080;
+  --lavender: #e6e6fa;
+  --slateblue: #6a5acd;
+  --navy: #000080;
+  --blue: #1e90ff;
+  --violetred: #c71585;
+  --orange: #a75702;
+  --red: #dc143c;
+  --green: #006400;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: "Cinzel", sans-serif;
+  line-height: 1.6;
+  color: #2b2b2b;
+}
+
+/* Top Navigation Bar */
+.navbar {
+  background-color: #1e2933;
+  padding: 14px 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-links a {
+  color: #8fa0b3;
+  text-decoration: none;
+  font-family: "Cinzel", serif;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.book-cover {
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    filter 0.3s ease;
+  cursor: pointer;
+}
+
+.book-cover:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+  filter: brightness(1.05);
+}
+
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+/* Main Page Header */
+.main-header {
+  text-align: center;
+}
+
+.main-title {
+  font-family: "Cinzel", serif;
+  font-size: 1.85rem;
+  font-weight: 600;
+  color: #6b829d;
+  text-transform: uppercase;
+}
+
+.page-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Cinzel", serif;
+}
+
+/* Section Block */
+.section-block {
+  padding: 20px 0;
+  margin-bottom: 30px;
+}
+
+/* Section Heading */
+.section-heading {
+  font-size: 1.25rem;
+  font-family: "Cinzel", serif;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid #e0e6ed; /* Light blue-gray line */
+  width: 100%;
+}
+
+/* List Styling */
+.book-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sub-list li {
+  margin-bottom: 4px;
+  font-size: 0.92rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+  background-color: var(--gray);
+  color: var(--black);
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* id selector */
+#table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+#table th,
+#table td {
+  border: 1px solid #e0e0e0;
+  padding: 12px 8px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#table thead th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #222222;
+}
+
+/* Body Styling */
+#table tbody td {
+  background-color: #ffffff;
+}
+
+/* Merged n/a Cells */
+#table td.na-cell {
+  color: #555555;
+}
+
+/* Footer Styling */
+#table tfoot td {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #222222;
+  font-size: 14px;
+}
