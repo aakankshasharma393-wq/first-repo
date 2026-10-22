@@ -184,3 +184,109 @@ body {
   color: #222222;
   font-size: 14px;
 }
+
+body.calculator-page {
+  background-color: #03054f;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.content-box {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 480px;
+  padding: 40px;
+  border-radius: 16px; /* Rounded card corners */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Header */
+.content-box h2 {
+  text-align: center;
+  color: #111b74; /* Deep blue title */
+  font-size: 2rem;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* Row alignment: Label on Left, Input on Right */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+/* Form Inputs */
+.form-row input[type="number"] {
+  width: 180px;
+  padding: 10px 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  background-color: #fafafa;
+}
+
+/* Radio Group Alignment */
+.form-yes-no {
+  margin-bottom: 18px;
+}
+
+.radio-options {
+  display: flex;
+  gap: 20px;
+  padding-left: 40px;
+}
+
+/* Buttons */
+.button-row {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.btn-calculate {
+  flex: 1;
+  background-color: #111b74;
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-reset {
+  flex: 1;
+  background-color: #e0e0e0;
+  color: #333333;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-calculate:hover {
+  background-color: #0b1254;
+}
+
+.btn-reset:hover {
+  background-color: #d0d0d0;
+}
+
+/* Disclaimer text at bottom */
+.disclaimer {
+  font-size: 0.9rem;
+  color: #333333;
+  margin: 0;
+}
