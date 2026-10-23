@@ -25,14 +25,14 @@
 
 body {
   background-color: #f8f9fa;
-  font-family: "Cinzel", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
   color: #2b2b2b;
 }
 
 .navbar {
   background-color: #1e2933;
-  padding: 14px 20px;
+  padding: 16px 20px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -54,11 +54,16 @@ body {
   font-size: 0.85rem;
   letter-spacing: 1px;
   text-transform: uppercase;
-  transition: color 0.2s ease;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: #ffffff;
+  background-color: #92b4ca;
+  color: #1e2933;
 }
 
 .book-cover {
@@ -86,21 +91,24 @@ body {
 
 .main-header {
   text-align: center;
+  margin-top: 20px;
 }
 
 .main-title {
   font-family: "Cinzel", serif;
-  font-size: 1.85rem;
+  font-size: 1.7rem;
   font-weight: 600;
   color: #6b829d;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .page-container {
+  background-color: #f7f7f7;
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
-  font-family: "Cinzel", serif;
+  padding: 40px 60px;
+  min-height: 100vh;
 }
 
 .section-block {
@@ -111,9 +119,9 @@ body {
 .section-heading {
   font-size: 1.25rem;
   font-family: "Cinzel", serif;
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #2c3e50;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: black;
   margin: 0 0 10px 0;
   border-bottom: 1px solid #e0e6ed;
   width: 100%;
@@ -123,6 +131,12 @@ body {
   list-style-type: disc;
   padding-left: 20px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.sub-list {
+  padding-left: 28px;
+  margin-top: 6px;
+  margin-bottom: 10px;
 }
 
 .sub-list li {
@@ -196,13 +210,11 @@ body.calculator-page {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Header */
-.content-box h2 {
-  text-align: center;
-  color: #111b74;
+.h1 {
   font-size: 2rem;
-  margin-top: 0;
-  margin-bottom: 30px;
+  color: #1e2933;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .form-row {
@@ -367,7 +379,6 @@ body.calculator-page {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding-top: 15px;
 }
 
 .image-wrapper img {
@@ -375,6 +386,11 @@ body.calculator-page {
   height: 150px;
   object-fit: contain;
   margin-bottom: 12px;
+}
+
+#goose .image-wrapper img {
+  width: 160px;
+  height: 220px;
 }
 
 .caption {
@@ -505,6 +521,7 @@ h1 {
 @media (min-width: 769px) {
   .grid-container {
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(7, auto);
     grid-template-areas:

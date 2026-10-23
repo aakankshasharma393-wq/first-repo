@@ -7,64 +7,67 @@
     <title>CSS Exercise 02 - Form</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <main>
-      <body class="calculator-page">
-        <div class="content-box">
-          <h2 class="h1">Roth IRA Calculator</h2>
-          <form>
-            <div class="form-row">
-              <label for="Balance">Balance($)</label>
-              <input type="number" id="balance" />
+
+  <body class="calculator-page">
+    <main class="calculator-card">
+      <div class="content-box">
+        <h1 class="h1">Roth IRA Calculator</h1>
+
+        <form>
+          <div class="form-row">
+            <label for="balance">Balance($)</label>
+            <input type="number" id="balance" />
+          </div>
+          <div class="form-row">
+            <label for="contribution">Annual Contribution ($)</label>
+            <input type="number" id="contribution" />
+          </div>
+          <fieldset class="form-yes-no">
+            <legend class="group-label">Maximize contribution?</legend>
+            <div class="radio-options">
+              <label>
+                <input
+                  type="radio"
+                  name="max_contrib"
+                  value="yes"
+                  id="max-yes"
+                />
+                Yes
+              </label>
+              <label>
+                <input type="radio" name="max_contrib" value="no" id="max-no" />
+                No
+              </label>
             </div>
-            <div class="form-row">
-              <label for="Annual Contribution">Annual Contribution ($)</label>
-              <input type="number" id="contribution" />
-            </div>
-            <div class="form-yes-no">
-              <label class="group-label">Maximize contribution?</label>
-              <div class="radio-options">
-                <label
-                  ><input type="radio" name="max_contrib" value="yes" />
-                  Yes</label
-                >
-                <label
-                  ><input type="radio" name="max_contrib" value="no" />
-                  No</label
-                >
-              </div>
-            </div>
-            <div class="form-row">
-              <label for="Expected rate of return"
-                >Expected rate of return (%)</label
-              >
-              <input type="number" id="rateofreturn" />
-            </div>
-            <div class="form-row">
-              <label for="Current age">Current age</label>
-              <input type="number" id="currentage" />
-            </div>
-            <div class="form-row">
-              <label for="Retirement age">Retirement age</label>
-              <input type="number" id="Retirementage" />
-            </div>
-            <div class="form-row">
-              <label for="Marginal tax rate (%)">Marginal tax rate (%)</label>
-              <input type="number" id="Marginalrate" />
-            </div>
-            <div class="button-row">
-              <button type="submit" class="btn-calculate">Calculate</button>
-              <button type="reset" class="btn-reset">Reset</button>
-            </div>
-          </form>
-          <p class="disclaimer">
-            This exercise is a simplified version of the Roth IRA Calculator at
-            <a href="https://www.calculator.net" target="_blank"
-              >Calculator.net</a
-            >
-          </p>
-        </div>
-      </body>
+          </fieldset>
+          <div class="form-row">
+            <label for="rateofreturn">Expected rate of return (%)</label>
+            <input type="number" id="rateofreturn" />
+          </div>
+          <div class="form-row">
+            <label for="currentage">Current age</label>
+            <input type="number" id="currentage" />
+          </div>
+          <div class="form-row">
+            <label for="Retirementage">Retirement age</label>
+            <input type="number" id="Retirementage" />
+          </div>
+          <div class="form-row">
+            <label for="Marginalrate">Marginal tax rate (%)</label>
+            <input type="number" id="Marginalrate" />
+          </div>
+          <div class="button-row">
+            <button type="submit" class="btn-calculate">Calculate</button>
+            <button type="reset" class="btn-reset">Reset</button>
+          </div>
+        </form>
+        <p class="disclaimer">
+          This exercise is a simplified version of the Roth IRA Calculator at
+          <a href="https://www.calculator.net" target="_blank"
+            >Calculator.net</a
+          >
+        </p>
+      </div>
     </main>
   </body>
 </html>
